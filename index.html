@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5音乐相册-珠峰培训</title>
+
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="css/zhouxiaotian.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- COMPUTED REM -->
+    <script>
+        ~ function () {
+            function computed() {
+                var HTML = document.documentElement,
+                    deviceW = HTML.clientWidth,
+                    designW = 375,
+                    maxW = 750,
+                    ratio = deviceW / designW;
+                deviceW >= maxW ? ratio = maxW / designW : null;
+                HTML.style.fontSize = ratio * 100 + 'px';
+            }
+            computed();
+            window.addEventListener('resize', computed, false);
+        }();
+    </script>
+</head>
+
+<body>
+    <main class="mainBox">
+        <!-- SWIPER -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- PAGE 1 -->
+                <div class="swiper-slide page1">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/index_1.png" alt="" class="ani" swiper-animate-effect="bounceInRight"
+                        swiper-animate-duration="1s" swiper-animate-delay="0s">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/index_2.png" alt="" class="ani" swiper-animate-effect="bounceInUp"
+                        swiper-animate-duration="1s" swiper-animate-delay="0s">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/index_3.png" alt="" class="ani" swiper-animate-effect="fadeIn"
+                        swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/index_4.png" alt="" class="ani" swiper-animate-effect="zoomIn"
+                        swiper-animate-duration="1s" swiper-animate-delay=".5s">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/index_5.png" alt="" class="ani" swiper-animate-effect="rotateInDownLeft"
+                        swiper-animate-duration="1s" swiper-animate-delay="1s">
+                </div>
+
+                <!-- PAGE 2 -->
+                <div class="swiper-slide page2">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page2_2.png" alt="">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page2_3.png" alt="">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page2_4.png" alt="">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page2_5.png" alt="">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page2_7.png" alt="">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page2_8.png" alt="">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page2_9.png" alt="">
+                    <div class="text">
+                        <p>劝君莫惜金缕衣</p>
+                        <p>劝君需惜少年时</p>
+                        <p>有花堪折直须折</p>
+                        <p>莫待无花空折枝</p>
+                    </div>
+                    <div class="photo">
+                        <img src="http://pkffc4n99.bkt.clouddn.com/image/person_1.jpg" alt="">
+                        <!-- <video src="http://pkffc4n99.bkt.clouddn.com/audio/stroke_on_everything.mp4" controls class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"></video> -->
+                    </div>
+                </div>
+
+                <!-- PAGE 3 -->
+                <div class="swiper-slide page3">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page3_1.png" alt="">
+                    <img src="http://pkffc4n99.bkt.clouddn.com/image/page3_3.png" alt="">
+                    <div class="concat">
+                        <img src="http://pkffc4n99.bkt.clouddn.com/image/zhou.png" alt="">
+                        <div class="text">
+                            <p>扫码领取</p>
+                            <p>课程视频</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 滑动提示按钮 -->
+        <a href="javascript:;" class="previousTip"></a>
+
+        <!-- 音乐 -->
+        <a href="javascript:;" class="musicBox"></a>
+        <audio src="http://pkffc4n99.bkt.clouddn.com/audio/remembrance_of_youth.m4a" autoplay loop preload="none" id="musicAdudio"></audio>
+    </main>
+
+    <!-- IMPORT JS -->
+    <script src="js/zhouxiaotian.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
